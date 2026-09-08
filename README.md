@@ -33,9 +33,10 @@ A few real syntax differences worth remembering, since Bash looks deceptively si
 This means compressing multiple files technically requires two separate steps: archive them into one `.tar` file first, then compress that archive. In practice, `tar` has built-in flags that do both in a single command — `-z` for gzip, `-j` for bzip2, `-J` for xz — but these are shortcuts; the same two underlying operations are still happening behind the scenes.
 
 **Lab: gzip vs. tar's built-in flags**
-
+```
 gzip my_archive.tar        # compresses the .tar into my_archive.tar.gz
 gunzip my_archive.tar.gz   # reverses it back to my_archive.tar
+```
 
 Running `gzip` standalone on a `.tar` file produces the exact same result as running `tar -czf archive.tar.gz /path/to/files` in one step. The `-z` flag doesn't do anything new — it's `tar` calling `gzip` internally on your behalf.
 
