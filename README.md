@@ -282,4 +282,4 @@ This module was mostly reading (CPU architecture, drivers, video/power hardware)
   - A number for the partition: `/dev/sda1` and `/dev/sda2` would be the first and second partitions on the first SATA/USB/SCSI drive
 ---
 
-*This file is a work in progress and will keep growing as I move through the rest of the course — remaining sections will cover pipes and redirection, basic scripting, package and process management, network configuration, and user/permissions management.*
+*This file is a work in progress and will keep growing as I move through the rest of the course*
